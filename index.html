@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMDB Api App</title>
+    <link rel="stylesheet" href="styles/css/main.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Movie Information</h1>
+        <div class="section">
+            <img id="poster">
+        </div>
+
+        <div class="section">
+            <label>Movie Title</label>
+            <input type="text" name="movie" id="movie" size="25" autofocus>
+        </div>
+
+        <div class="section">
+            <label>Year:</label>
+            <span id="year"></span>
+        </div>
+
+        <div class="section">
+            <label>Rated:</label>
+            <span id="rated"></span>
+        </div>
+
+        <div class="section">
+            <label>Released</label>
+            <span id="released"></span>
+        </div>
+
+        <div class="section">
+            <label>Run Time:</label>
+            <span id="runtime"></span>
+        </div>
+    
+        <div class="section">
+            <label>Genre:</label>
+            <span id="genre"></span>
+        </div>
+
+        <div class="section">
+            <label>Director:</label>
+            <span id="director"></span>
+        </div>
+
+        <div class="section">
+            <label>Actors:</label>
+            <span id="actors"></span>
+        </div>
+
+        <div class="section">
+            <label>Language:</label>
+            <span id="language"></span>
+        </div>
+
+        <div class="section">
+            <label>Country:</label>
+            <span id="country"></span>
+        </div>
+
+        <div class="section">
+            <label>Awards:</label>
+            <span id="awards"></span>
+        </div>
+
+        <div class="section">
+            <button id="btn">Get Movie Information</button>
+        </div>
+    </div>
+
+    <footer id="credits">
+    </footer>
+    
+    <script>
+        const theDate = new Date();
+        const footer = document.querySelector("#credits");
+
+        footer.innerHTML = `<p>© ${theDate.getFullYear()} Yimei Han</p>`;
+    </script>
+
+    <script src="scripts/js/main.js"></script>
+</body>
+
+</html>

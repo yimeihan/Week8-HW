@@ -1,0 +1,73 @@
+1.
+AJAX stands for Asynchronous JavaScript and XML.
+
+2.
+XML stands for eXtensible Markup Language. 
+
+3.
+AJAX uses a built-in browser XMLHttpRequest object to request data from the server.
+
+4.
+it is possible to only update parts of a page instead of reloading the whole page.
+
+5.
+-An event occurs on the page. The page is loaded, or a button is clicked.
+-An XMLHttpRequest object sends a request to the server.
+-The server sends a response back to the web page that made the request.
+-The response is read by JavaScript.
+-JavaScript executes the page update.
+
+6.
+The XMLHttpRequest object is the core of AJAX.
+
+7.
+The XMLHttpRequest object is used to exchange data with a web server behind the scenes (asynchronously). This means that it is possible to update parts of a page instead of the whole page.
+
+8.
+variable = new XMLHttpRequest();
+
+9.
+const xhttps = new XMLHttpRequest();
+This creates a new instance of the XMLHttpRequest Object. In other words, this represents the XMLHttpRequest Object.
+
+10.
+The XMLHttpRequest() constructor initializes an XMLHttpRequest (object). It must be called before any other method calls.
+
+11.
+Because these days, on a live server, we cannot use http anymore. We had to use https for the omdb api link, even though it itself is not over https.
+
+12.
+New keyword
+
+13.
+The new keyword was used to create an instance of the ArchiveTemp object using the ArchiveTemp () constructor function.
+
+14.
+-It is used to create an object from a constructor function such as XMLHttpRequest().
+-It sets the new object's internal, inaccessible (aka private), [[prototype]] property to be the constructor function's external, accessible, prototype object. Every function object automatically has a prototype property.
+-It executes the constructor function, using the newly created object whenever this is mentioned.
+-The new keyword makes the this keyword point to the newly created object. The constructor function refers to the function that follows the new keyword.
+-It returns this if the function does not return its own object.
+
+15.
+This points to the xhttps XMLHttpRequest Object we have created with the value of new XMLHttpRequest() This creates a (new) instance of the XMLHttpRequest Object. In other words, this represents the XMLHttpRequest Object. 
+
+16.
+XMLHttpRequest.open(): initializes a newly-created request, or re-initializes an existing one.
+
+17.
+xhttps.open("GET", url, true);
+
+18.
+-"GET" is the method (the value of the first parameter passed to open()) we are using. We are requesting to "GET" data from the OMDB Api.
+-url is the url we are sending our request to (the value of the second parameter passed in to open()).
+-true means that we are making the request asynchronously (the value of the third parameter passed to open()).
+
+19.
+xhttps.send();
+
+20.
+Set the send() method on our xhttps object/variable. This call to send() immediately follows the call to open(), and is placed right below xhttps.send(). Nothing is passed in to it. We could pass in a document, for example, but we are simply "getting" data here, not sending data. We are only sending our request.
+
+
+
